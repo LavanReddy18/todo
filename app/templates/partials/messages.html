@@ -1,0 +1,15 @@
+{% if messages %}
+<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+<script src="/static/assets/sweetalert2/dist/sweetalert2.min.js"></script>
+<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/assets/sweetalert2/dist/sweetalert2.min.css">
+{% for message in messages %}
+<script>
+    swal({
+        text: '{{ message }}',
+        type: '{{ message.tags }}'
+        });
+</script>
+{% endfor %}
+{% endif %}

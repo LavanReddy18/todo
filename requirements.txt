@@ -1,0 +1,12 @@
+django==2.2.7
+django-extensions
+django-environ
+django-braces
+psycopg2==2.8.4
+pdbpp
+ipython
+ptpython
+yapf
+gunicorn
+secret-key-generator
+django-postgres-copy
